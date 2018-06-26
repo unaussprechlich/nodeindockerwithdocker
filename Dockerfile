@@ -3,7 +3,7 @@ FROM node:10.5-stretch
 
 RUN apt-get update
 RUN set -ex; \
-        apt-get install -y whatever \
+        apt-get install -y \
         apt-transport-https \
         software-properties-common
 RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
