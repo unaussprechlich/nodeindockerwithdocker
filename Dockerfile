@@ -3,7 +3,7 @@ FROM node:10.5-stretch
 
 RUN apt-get update
 RUN set -ex; \
-        apt-get install \
+        apt-get install -y whatever \
         apt-transport-https \
         software-properties-common
 RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
@@ -12,4 +12,4 @@ RUN add-apt-repository \
    $(lsb_release -cs) \
    stable"
 RUN apt-get update
-RUN apt-get install docker-ce
+RUN apt-get install -y whatever docker-ce
