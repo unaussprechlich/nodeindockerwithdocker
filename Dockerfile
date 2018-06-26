@@ -4,8 +4,6 @@ FROM node:10.5-stretch
 RUN apt-get update
 RUN apt-get install \
     apt-transport-https \
-    ca-certificates \
-    curl \
     software-properties-common
 RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 RUN add-apt-repository \
